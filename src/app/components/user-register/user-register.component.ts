@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from  '@angular/forms';
 
 @Component({
   selector: 'app-user-register',
@@ -7,9 +8,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserRegisterComponent implements OnInit {
 
-  constructor() { }
+  registerUserForm: FormGroup;
+
+  constructor(private formBuilder: FormBuilder) { }
 
   ngOnInit(): void {
+    this.registerUserForm = this.formBuilder.group({
+      uName:[''],
+      password:[''],
+      fName:[''],
+      lName:[''],
+      email:['']
+    });
   }
 
+
+  registerUser(){
+
+  }
+
+  checkUnique(){
+    
+  }
 }

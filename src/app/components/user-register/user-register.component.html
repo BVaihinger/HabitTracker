@@ -1,1 +1,74 @@
-<p>user-register works!</p>
+<div class="container">
+
+<div class="row justify-content-center">
+<div class="col-md-6">
+    <div class="card">
+        <header class="card-header just">
+            <h4 class="card-title mt-2">Sign up</h4>
+        </header>
+        <div class="card-body">
+            <form [formGroup]="registerUserForm"  (ngSubmit)="registerUser()">
+                
+
+                
+                <div class="col form-group">
+                    <label>Username</label>
+                    <div class="form-row">
+                        <div class="col">
+                            <input type="text" class="form-control" formControlName="uName">
+                        </div>
+                        <div class="col-xs-2" >
+                            <button (onClick)="checkUnique()">Test</button>
+                        </div>
+                    </div>
+                    <small class="form-text text-muted">Username must be unique.</small>
+                </div>
+           
+
+                
+                <div class="col form-group">
+                    <label>Password</label>
+                    <input type="password" class="form-control" formControlName="password">
+                </div>
+
+                <div class="col form-group">
+                    <label>Confirm Password</label>
+                    <input type="password" class="form-control">
+                </div>
+                
+                <hr>
+                
+                
+                <div class="form-row">
+                    <div class="col form-group">
+                        <label>First name</label>
+                        <input type="text" class="form-control" placeholder="" formControlName="fName">
+                    </div>
+                    <div class="col form-group">
+                        <label>Last name</label>
+                        <input type="text" class="form-control" placeholder="" formControlName="lName">
+                    </div>
+                </div>
+
+                
+                <div class="col form-group">
+                    <label>Email Address</label>
+                    <input type="email" class="form-control" formControlName="email">
+                    <small class="form-text text-muted">Optional email for account recovery.</small>
+                </div>
+
+
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-block"> Register  </button>
+                </div> <!-- form-group// -->    
+        
+
+            </form>
+        </div>
+    </div><!--card end-->
+
+</div><!--main col end-->
+</div><!--row end-->
+
+</div> <!--container end-->
+
