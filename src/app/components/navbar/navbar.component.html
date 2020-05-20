@@ -1,0 +1,55 @@
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Habits</a>
+        </div>
+    
+    <div *ngIf="isLoggedIn; else elseBlock" class="nav">
+        <ul class="nav navbar-nav navbar-left" routerLinkActive="active">
+            <li class="nav-item">
+                <a class="nav-link" routerLink="daily">Daily</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" routerLink="weekly">Weekly</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" routerLink="monthly">Monthly</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" routerLink="habits-list">Habits</a>
+            </li>
+        </ul>
+
+
+        <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item">
+                <a class="nav-link" routerLink="user-settings">Settings</a>
+            </li>
+            
+            <li class="nav-item">
+                <button class="btn btn-primary navbar-btn" >Log Out</button>
+            </li>
+        </ul>
+    </div>
+
+
+    <ng-template #elseBlock>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="nav-item">
+            <a class="nav-link" routerLink="register">Register</a>
+        </li>
+        
+        <li class="nav-item">
+            <a class="nav-link" routerLink="login">Log In</a>
+        </li>
+      </ul>
+    </ng-template>
+      
+    </div>
+  </nav>
+
+  

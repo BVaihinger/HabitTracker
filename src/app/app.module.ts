@@ -12,6 +12,9 @@ import { UserDetailsComponent } from './components/user-details/user-details.com
 import { HabitListComponent } from './components/habit-list/habit-list.component';
 import { HabitDetailsComponent } from './components/habit-details/habit-details.component';
 import { HabitCreateComponent } from './components/habit-create/habit-create.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+
+
 
 @NgModule({
   declarations: [
@@ -24,7 +27,8 @@ import { HabitCreateComponent } from './components/habit-create/habit-create.com
     UserDetailsComponent,
     HabitListComponent,
     HabitDetailsComponent,
-    HabitCreateComponent
+    HabitCreateComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
