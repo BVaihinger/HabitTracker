@@ -15,6 +15,7 @@ import { HabitListComponent } from './components/habit-list/habit-list.component
 import { HabitDetailsComponent } from './components/habit-details/habit-details.component';
 import { HabitCreateComponent } from './components/habit-create/habit-create.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 
 
@@ -30,7 +31,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     HabitListComponent,
     HabitDetailsComponent,
     HabitCreateComponent,
-    NavbarComponent
+    NavbarComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,

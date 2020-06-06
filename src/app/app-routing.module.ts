@@ -8,6 +8,7 @@ import { HabitListComponent } from './components/habit-list/habit-list.component
 import { LoginComponent } from './components/login/login.component';
 import { UserRegisterComponent } from './components/user-register/user-register.component';
 import { UserDetailsComponent } from './components/user-details/user-details.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 
 
@@ -18,7 +19,8 @@ const routes: Routes = [
   {path: "habits-list", component: HabitListComponent},
   {path: "login", component: LoginComponent},
   {path: "register", component: UserRegisterComponent},
-  {path: "user-settings", component: UserDetailsComponent}
+  {path: "user-settings", component: UserDetailsComponent},
+  {path: "dash", component: DashboardComponent}
 ];
 
 @NgModule({

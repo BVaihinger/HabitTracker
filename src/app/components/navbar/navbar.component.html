@@ -8,6 +8,10 @@
     <div *ngIf="isLoggedIn; else elseBlock" class="nav">
         <ul class="nav navbar-nav navbar-left" routerLinkActive="active">
             <li class="nav-item">
+                <a class="nav-link" routerLink="dash">Dashboard</a>
+            </li>
+
+            <li class="nav-item">
                 <a class="nav-link" routerLink="daily">Daily</a>
             </li>
 
